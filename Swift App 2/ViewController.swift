@@ -8,10 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var TheLabel: UILabel!
     
-
+    
     
     @IBOutlet weak var TextOne: UITextField!
     
@@ -20,10 +20,19 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttontabt(_ sender: Any) {
-       
-        TheLabel.text = "Anser: \(Double(TextOne.text!)! + Double(Text2.text!)!)"
         
+        let addition = false
+        
+        if addition {
+            TheLabel.text = "Anser: \(Double(TextOne.text!)! + Double(Text2.text!)!)"
+        } else {
+            TheLabel.text = "Anser: \(Double(TextOne.text!)! - Double(Text2.text!)!)"
+            
+            
+            
+        }
     }
+    
     
     
     override func viewDidLoad() {
@@ -32,7 +41,7 @@ class ViewController: UIViewController {
         
     }
     
-
-
+    
+    
 }
 
